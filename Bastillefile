@@ -5,7 +5,6 @@ CP usr /
 CMD /root/bootstrap-sonarr.sh
 
 CMD chmod +x /usr/local/etc/rc.d/sonarr
-CMD ln -s /usr/local/bin/mono /usr/bin/mono
 
 SYSRC sonarr_enable=YES
 SERVICE sonarr restart
