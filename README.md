@@ -1,11 +1,11 @@
-# Radarr
-Bastille Template for radarr
+# Sonarr
+Bastille Template for sonarr
 
 # Bootstrap
 ```shell
-bastille bootstrap https://github.com/macostea/bastillebsd-template-radarr
+bastille bootstrap https://github.com/macostea/bastillebsd-template-sonarr
 ```
 # Usage
 ```shell
-bastille template TARGET macostea/bastillebsd-template-radarr
+bastille template TARGET macostea/bastillebsd-template-sonarr
 ```

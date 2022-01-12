@@ -2,21 +2,21 @@
 
 . /etc/rc.subr
 
-name="radarr"
+name="sonarr"
 rcvar="${name}_enable"
 load_rc_config $name
 
 start_cmd="${name}_start"
 stop_cmd="${name}_stop"
 
-radarr_start()
+sonarr_start()
 {
-    /usr/sbin/daemon -f -p /usr/local/radarr/radarr.pid /usr/local/bin/mono --debug /app/Radarr -nobrowser -data=/config
+    /usr/sbin/daemon -f -p /usr/local/sonarr/sonarr.pid /usr/local/bin/mono --debug /app/Sonarr.exe -nobrowser -data=/config
 }
 
-radarr_stop()
+sonarr_stop()
 {
-    pid=`cat /usr/local/radarr/radarr.pid` 2> /dev/null
+    pid=`cat /usr/local/sonarr/sonarr.pid` 2> /dev/null
     if [ -n "${pid}" ]; then
         kill -9 ${pid}
         wait_for_pids ${pid}
