@@ -11,7 +11,7 @@ stop_cmd="${name}_stop"
 
 sonarr_start()
 {
-    /usr/sbin/daemon -f -p /usr/local/sonarr/sonarr.pid /usr/local/bin/mono --debug /app/Sonarr.exe -nobrowser
+    /usr/sbin/daemon -f -p /usr/local/sonarr/sonarr.pid /usr/local/bin/mono --debug /app/Sonarr.exe -nobrowser -data=/config
 }
 
 sonarr_stop()
