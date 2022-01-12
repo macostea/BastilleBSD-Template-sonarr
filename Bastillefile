@@ -4,7 +4,6 @@ CP usr /
 
 CMD /root/bootstrap-sonarr.sh
 
-CP sonarr.sh /usr/local/etc/rc.d/sonarr
 CMD chmod +x /usr/local/etc/rc.d/sonarr
 
 SYSRC sonarr_enable=YES
