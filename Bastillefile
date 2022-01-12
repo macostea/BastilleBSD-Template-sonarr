@@ -1,10 +1,4 @@
-PKG mono5.20-5.20.1.34 sqlite3 curl libmediainfo
-CP root /
-CP usr /
-
-CMD /root/bootstrap-sonarr.sh
-
-CMD chmod +x /usr/local/etc/rc.d/sonarr
+PKG sonarr
 
 SYSRC sonarr_enable=YES
 SERVICE sonarr restart
